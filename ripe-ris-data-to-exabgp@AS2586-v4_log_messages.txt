@@ -1,0 +1,201 @@
+Jun 30 12:33:04 upstreams systemd[1]: Started ripe-ris-data-to-exabgp@AS2586-v4.service - RIPE RIS data to ExaBGP - AS2586-v4.
+Jun 30 12:33:05 upstreams python3[796]: [process_config] - INFO - Processing the conf file named "/usr/local/etc/conf-AS2586-v4.ini"
+Jun 30 12:33:05 upstreams python3[796]: [main] - INFO - Created temporary directory /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g
+Jun 30 12:33:05 upstreams python3[796]: [ris_live_listener] - INFO - Subscribing to stream from 194.68.123.136 on rrc07
+Jun 30 12:33:05 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/latest-bview.gz
+Jun 30 12:33:05 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/latest-bview.gz
+Jun 30 12:33:05 upstreams python3[796]: [ris_live_listener] - INFO - Server acknowledged subscription.
+Jun 30 12:33:11 upstreams python3[796]: [build_exabgp_conf] - INFO - Starting to build ExaBGP conf file to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/exabgp.conf
+Jun 30 12:33:11 upstreams python3[796]: [build_exabgp_conf] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/latest-bview.gz
+Jun 30 12:33:17 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 151.101.0.0/16
+Jun 30 12:33:18 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 199.232.0.0/16
+Jun 30 12:33:21 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 146.75.0.0/17
+Jun 30 12:33:21 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 146.75.128.0/17
+Jun 30 12:33:21 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 167.82.0.0/17
+Jun 30 12:33:25 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 140.248.0.0/18
+Jun 30 12:33:25 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 140.248.128.0/18
+Jun 30 12:33:25 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 140.248.192.0/18
+Jun 30 12:33:26 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 172.111.64.0/18
+Jun 30 12:33:28 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 5.61.128.0/19
+Jun 30 12:33:28 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 5.61.160.0/19
+Jun 30 12:33:31 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 8631 for prefix 89.18.128.0/19
+Jun 30 12:33:33 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 131.125.96.0/19
+Jun 30 12:33:38 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 207.89.64.0/19
+Jun 30 12:33:38 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 207.89.96.0/19
+Jun 30 12:33:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 5.61.128.0/20
+Jun 30 12:33:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 5.61.144.0/20
+Jun 30 12:33:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 5.61.160.0/20
+Jun 30 12:33:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 5.61.176.0/20
+Jun 30 12:33:55 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 207.89.64.0/20
+Jun 30 12:34:09 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 140.248.56.0/21
+Jun 30 12:34:18 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 207.89.120.0/21
+Jun 30 12:34:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 327767 for prefix 102.217.228.0/22
+Jun 30 12:34:47 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 151.101.0.0/22
+Jun 30 12:34:47 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 151.101.60.0/22
+Jun 30 12:34:47 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 151.101.64.0/22
+Jun 30 12:34:47 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 151.101.128.0/22
+Jun 30 12:34:47 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 151.101.192.0/22
+Jun 30 12:34:47 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 151.101.244.0/22
+Jun 30 12:34:48 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 162.219.224.0/22
+Jun 30 12:34:48 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 167.82.48.0/22
+Jun 30 12:34:48 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 167.82.80.0/22
+Jun 30 12:34:48 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 167.82.84.0/22
+Jun 30 12:34:49 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 264891 for prefix 168.227.112.0/22
+Jun 30 12:35:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 199.232.20.0/22
+Jun 30 12:35:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 199.232.172.0/22
+Jun 30 12:35:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 199.232.192.0/22
+Jun 30 12:35:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 199.232.196.0/22
+Jun 30 12:35:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 199.232.208.0/22
+Jun 30 12:35:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 199.232.212.0/22
+Jun 30 12:35:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 199.232.232.0/22
+Jun 30 12:35:19 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 327767 for prefix 102.217.228.0/23
+Jun 30 12:35:34 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 63529 for prefix 192.150.250.0/23
+Jun 30 12:35:38 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 207.89.116.0/23
+Jun 30 12:35:42 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 5.61.163.0/24
+Jun 30 12:35:48 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 23.154.64.0/24
+Jun 30 12:35:48 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 23.185.0.0/24
+Jun 30 12:35:50 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 23.235.32.0/24
+Jun 30 12:35:50 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 23.235.33.0/24
+Jun 30 12:35:50 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 23.235.36.0/24
+Jun 30 12:35:50 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 23.235.37.0/24
+Jun 30 12:35:53 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 199414 for prefix 31.6.32.0/24
+Jun 30 12:36:00 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 199414 for prefix 38.225.76.0/24
+Jun 30 12:36:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 41.79.64.0/24
+Jun 30 12:36:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 41.79.65.0/24
+Jun 30 12:36:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 41.79.66.0/24
+Jun 30 12:36:02 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 41.79.67.0/24
+Jun 30 12:36:06 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 199414 for prefix 45.61.170.0/24
+Jun 30 12:36:30 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 66.211.168.0/24
+Jun 30 12:36:40 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 199414 for prefix 81.29.151.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.22.216.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.22.217.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.22.218.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.22.219.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.22.220.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.22.221.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.22.222.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.64.7.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.212.240.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.212.241.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.216.32.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.216.33.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.216.34.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.216.35.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.221.44.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.221.45.0/24
+Jun 30 12:37:01 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.221.46.0/24
+Jun 30 12:37:08 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 104.156.80.0/24
+Jun 30 12:37:08 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 104.156.81.0/24
+Jun 30 12:37:08 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 104.156.84.0/24
+Jun 30 12:37:08 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 104.156.85.0/24
+Jun 30 12:37:09 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 104.244.43.0/24
+Jun 30 12:37:25 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 146.75.202.0/24
+Jun 30 12:37:33 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 157.52.104.0/24
+Jun 30 12:37:33 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 157.52.122.0/24
+Jun 30 12:37:34 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 159.242.243.0/24
+Jun 30 12:37:36 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 162.219.224.0/24
+Jun 30 12:37:36 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 162.219.225.0/24
+Jun 30 12:37:36 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 162.219.226.0/24
+Jun 30 12:37:36 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 162.219.227.0/24
+Jun 30 12:37:36 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 162.247.243.0/24
+Jun 30 12:37:38 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 167.82.236.0/24
+Jun 30 12:37:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 264891 for prefix 168.227.113.0/24
+Jun 30 12:37:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 168.253.112.0/24
+Jun 30 12:37:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 168.253.114.0/24
+Jun 30 12:37:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 168.253.115.0/24
+Jun 30 12:37:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 168.253.116.0/24
+Jun 30 12:37:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 168.253.117.0/24
+Jun 30 12:37:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 168.253.118.0/24
+Jun 30 12:37:39 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 168.253.119.0/24
+Jun 30 12:37:58 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 51706 for prefix 185.4.250.0/24
+Jun 30 12:38:00 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 43100 for prefix 185.78.80.0/24
+Jun 30 12:38:00 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 43100 for prefix 185.78.82.0/24
+Jun 30 12:38:00 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 43100 for prefix 185.78.83.0/24
+Jun 30 12:38:00 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 51706 for prefix 185.79.192.0/24
+Jun 30 12:38:03 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 185.199.108.0/24
+Jun 30 12:38:03 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 185.199.109.0/24
+Jun 30 12:38:03 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 185.199.110.0/24
+Jun 30 12:38:03 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 185.199.111.0/24
+Jun 30 12:38:04 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 185.221.87.0/24
+Jun 30 12:38:04 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 209209 for prefix 185.232.44.0/24
+Jun 30 12:38:17 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 202261 for prefix 194.147.136.0/24
+Jun 30 12:38:17 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 202261 for prefix 194.147.137.0/24
+Jun 30 12:38:21 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 198.54.216.0/24
+Jun 30 12:38:22 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 54113 for prefix 199.36.158.0/24
+Jun 30 12:38:33 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 210305 for prefix 204.99.140.0/24
+Jun 30 12:38:35 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 16374 for prefix 207.89.68.0/24
+Jun 30 12:38:40 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 8714 for prefix 212.22.228.0/24
+Jun 30 12:38:40 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 8714 for prefix 212.22.229.0/24
+Jun 30 12:38:40 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 8714 for prefix 212.22.230.0/24
+Jun 30 12:38:40 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 8714 for prefix 212.22.231.0/24
+Jun 30 12:38:50 upstreams python3[796]: [run_exabgp] - INFO - Executing command: /usr/bin/ip vrf exec default /usr/sbin/exabgp --root /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/exabgp.conf
+Jun 30 12:49:27 upstreams python3[796]: [run_exabgp] - INFO - ExaBGP has successfully loaded its configuration
+Jun 30 12:49:27 upstreams python3[796]: [get_updates_file_names] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/
+Jun 30 12:49:27 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0800.gz
+Jun 30 12:49:27 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0800.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0805.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0805.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0810.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0810.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0815.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0815.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0820.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0820.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0825.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0825.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0830.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0830.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0835.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0835.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0840.gz
+Jun 30 12:49:28 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0840.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0845.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0845.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0850.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0850.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0855.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0855.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0900.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0900.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0905.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0905.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0910.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0910.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0915.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0915.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0920.gz
+Jun 30 12:49:29 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0920.gz
+Jun 30 12:49:30 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0925.gz
+Jun 30 12:49:30 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0925.gz
+Jun 30 12:49:30 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0930.gz
+Jun 30 12:49:30 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0930.gz
+Jun 30 12:49:30 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0935.gz
+Jun 30 12:49:30 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0935.gz
+Jun 30 12:49:30 upstreams python3[796]: [download_files] - INFO - Downloading https://data.ris.ripe.net/rrc07/2025.06/updates.20250630.0940.gz
+Jun 30 12:49:30 upstreams python3[796]: [download_files] - INFO - Writing to /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0940.gz
+Jun 30 12:49:30 upstreams python3[796]: [main] - INFO - Updates files downloaded. Starting to build ExaBGP API calls.
+Jun 30 12:49:30 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0800.gz
+Jun 30 12:49:30 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0805.gz
+Jun 30 12:49:31 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0810.gz
+Jun 30 12:49:31 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0815.gz
+Jun 30 12:49:31 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0820.gz
+Jun 30 12:49:32 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0825.gz
+Jun 30 12:49:32 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0830.gz
+Jun 30 12:49:32 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0835.gz
+Jun 30 12:49:32 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0840.gz
+Jun 30 12:49:33 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0845.gz
+Jun 30 12:49:33 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0850.gz
+Jun 30 12:49:33 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0855.gz
+Jun 30 12:49:33 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0900.gz
+Jun 30 12:49:34 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0905.gz
+Jun 30 12:49:34 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0910.gz
+Jun 30 12:49:34 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0915.gz
+Jun 30 12:49:35 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0920.gz
+Jun 30 12:49:35 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0925.gz
+Jun 30 12:49:35 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0930.gz
+Jun 30 12:49:35 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0935.gz
+Jun 30 12:49:36 upstreams python3[796]: [get_updates] - INFO - Executing command: bgpkit-parser --json --ipv4-only --peer-ip 194.68.123.136 /tmp/ripe-ris-data-to-exabgp.py__mv1ur4g/updates.20250630.0940.gz
+Jun 30 12:49:36 upstreams python3[796]: [main] - INFO - Starting to write ExaBGP API calls from updates files.
+Jun 30 12:50:20 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.221.114.0/24
+Jun 30 12:50:20 upstreams python3[796]: [process_record] - WARNING - Ignoring OTC attribute 37783 for prefix 102.221.115.0/24
+Jun 30 12:51:07 upstreams python3[796]: [main] - INFO - Starting to write ExaBGP API calls from RIS Live messages

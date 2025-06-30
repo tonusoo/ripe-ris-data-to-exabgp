@@ -1,0 +1,16 @@
+[Unit]
+Description=RIPE RIS data to ExaBGP - %i
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/ip vrf exec mgnt ripe-ris-data-to-exabgp.py /usr/local/etc/conf-%i.ini
+# Use SIGINT instead of SIGTERM because if the ExaBGP
+# process receives the SIGTERM while it is reading its
+# configuration, then the ExaBGP processes the signal
+# and schedules a shutdown, but keeps reading the
+# configuration file. In case of SIGINT, the ExaBGP
+# terminates immediately.
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
