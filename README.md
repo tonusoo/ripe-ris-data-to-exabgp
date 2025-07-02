@@ -10,7 +10,7 @@ Let's say, that _Acme Corporation_(`AS 64511`) buys IP transit from three provid
 
 With system running, the _Acme Corporation_ Juniper router named `acme-r1` receives 3x IPv4 and 3x IPv6 full feed from its upstream providers:
 
-https://github.com/user-attachments/assets/43e0de7d-7fc8-4810-afa8-b5e72d052f6d
+https://github.com/user-attachments/assets/6b4c0f7f-55d3-48a5-91f4-2ea1476b61e4
 
 The overall architecture of the system can be seen below:
 
