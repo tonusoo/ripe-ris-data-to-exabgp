@@ -18,7 +18,7 @@ Script is meant to be run as a systemd "Type=simple" service.
 Script has several expectations like:
 
     * /usr/sbin/exabgp binary installed and
-      bgpkit-parser version 0.11.0 or newer in PATH
+      bgpkit-parser version 0.13.0 or newer in PATH
 
     * BIRD version 3.x running in the same host
 
@@ -986,7 +986,7 @@ async def build_exabgp_conf(
 
     Runs bgpkit-parser as a subprocess, processes its JSON
     output, and writes an ExaBGP configuration file containing
-    static route definitions. It determines the earliest BGP
+    static route definitions. It determines the latest BGP
     message timestamp seen, which is used later for update
     filtering.
 
@@ -1010,7 +1010,7 @@ async def build_exabgp_conf(
 
     Returns:
         A tuple containing the local address used in the ExaBGP
-        config(127.0.0.1 or ::1) and the earliest BGP message
+        config(127.0.0.1 or ::1) and the latest BGP message
         timestamp found.
 
     Raises:
@@ -1026,7 +1026,7 @@ async def build_exabgp_conf(
         else "--ipv6-only"
     )
 
-    # bgpkit-parser version 0.11.0 or newer is expected.
+    # bgpkit-parser version 0.13.0 or newer is expected.
     cmd = [
         "bgpkit-parser",
         "--json",
@@ -1113,20 +1113,14 @@ async def build_exabgp_conf(
                     # are later downloaded and which updates are
                     # converted to ExaBGP API calls.
                     #
-                    # 'exabgp_route["timestamp"] < timestamp' check
-                    # should be unnecessary as the timestamp of
-                    # the first entry should always be the lowest.
-                    #
-                    # At least in the past in theory the entries
-                    # in dump files could have different timestamps
-                    # because RIPE RIS project used Quagga for BGP
-                    # table dumps and Quagga calls gettimeofday()
-                    # in bgp_dump_header() in bgp_dump.c for each
-                    # route in case of RIB dump(dump bgp routes-mrt
-                    # <file>). The same holds true for FRRouting.
+                    # Before bgpkit-parser version 0.13.0, entries
+                    # in the dump file had a timestamp of the RIB
+                    # dump. Starting from the 0.13.0, the entries
+                    # in the dump file have a timestamp of the time
+                    # when the prefix was learned.
                     if timestamp is None or (
                         exabgp_route["timestamp"] is not None
-                        and exabgp_route["timestamp"] < timestamp
+                        and exabgp_route["timestamp"] > timestamp
                     ):
                         timestamp = exabgp_route["timestamp"]
 
