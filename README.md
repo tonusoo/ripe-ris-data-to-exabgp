@@ -26,38 +26,38 @@ martin@upstreams:~$ lsb_release -d
 Description:    Debian GNU/Linux 13 (trixie)
 martin@upstreams:~$
 martin@upstreams:~$ python3 --version
-Python 3.13.3
+Python 3.13.5
 martin@upstreams:~$
 martin@upstreams:~$ # third-party Python modules
 martin@upstreams:~$ dpkg -l python3-aiofiles python3-aiohttp python3-websockets python3-lxml
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name               Version      Architecture Description
-+++-==================-============-============-======================================================
-ii  python3-aiofiles   24.1.0-2     all          support for Python asyncio file operations
-ii  python3-aiohttp    3.11.16-1    amd64        http client/server for asyncio
-ii  python3-lxml:amd64 5.4.0-1      amd64        pythonic binding for the libxml2 and libxslt libraries
-ii  python3-websockets 15.0.1-1     amd64        implementation of the WebSocket Protocol (RFC 6455)
+||/ Name               Version           Architecture Description
++++-==================-=================-============-======================================================
+ii  python3-aiofiles   24.1.0-2          all          support for Python asyncio file operations
+ii  python3-aiohttp    3.11.16-1+deb13u1 amd64        http client/server for asyncio
+ii  python3-lxml:amd64 5.4.0-1           amd64        pythonic binding for the libxml2 and libxslt libraries
+ii  python3-websockets 15.0.1-1          amd64        implementation of the WebSocket Protocol (RFC 6455)
 martin@upstreams:~$
 martin@upstreams:~$ # Scapy module with https://github.com/secdev/scapy/pull/4745 patch
 martin@upstreams:~$ python3 -c "import scapy; print(scapy.__version__)"
-2.6.1.dev109
+2.7.1rc1.post28
 martin@upstreams:~$
-martin@upstreams:~$ # bgpkit-parser version 0.11.0 or newer in PATH
+martin@upstreams:~$ # bgpkit-parser version 0.13.0 or newer in PATH
 martin@upstreams:~$ bgpkit-parser --version
-bgpkit-parser 0.11.1
+bgpkit-parser 0.16.0
 martin@upstreams:~$
 martin@upstreams:~$ # /usr/sbin/exabgp from python3-exabgp package
 martin@upstreams:~$ /usr/sbin/exabgp --version
 ExaBGP : 4.2.25
-Python : 3.13.3 (main, Apr 10 2025, 21:38:51) [GCC 14.2.0]
-Uname  : Linux upstreams 6.12.32-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.32-1 (2025-06-07) x86_64
+Python : 3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]
+Uname  : Linux upstreams 6.12.88+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.88-1 (2026-05-15) x86_64
 Root   :
 martin@upstreams:~$
 martin@upstreams:~$ # bird3; https://pkg.labs.nic.cz/doc/?project=bird
 martin@upstreams:~$ /usr/sbin/bird --version
-BIRD version 3.1.2
+BIRD version 3.2.1
 martin@upstreams:~$
 ```
 
